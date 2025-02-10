@@ -1,8 +1,12 @@
+/* إضافة المسافة بين عناصر التنقل */
 .navbar-nav .nav-item {
-    margin-left: 100px;  /* المسافة من اليسار */
-    margin-right: 100px; /* المسافة من اليمين */
+    margin-left: 15px;  /* مسافة أقل لتكون أكثر تناسقًا */
+    margin-right: 15px;
+    
+    
 }
 
+/* تحسينات على الجسم */
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f7f7f7;
@@ -10,6 +14,8 @@ body {
     padding: 0;
     color: #333;
 }
+
+/* تنسيق الحاوية الرئيسية */
 .container {
     width: 85%;
     max-width: 1200px;
@@ -19,6 +25,8 @@ body {
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
+
+/* تنسيق العناوين */
 h1, h2 {
     text-align: center;
     color: #4A90E2; /* اللون الأزرق العصري */
@@ -30,6 +38,7 @@ h3 {
     margin-top: 30px;
 }
 
+/* تنسيق الهيدر */
 .header {
     display: flex;
     justify-content: space-between;
@@ -37,6 +46,8 @@ h3 {
     border-bottom: 2px solid #4A90E2;
     padding-bottom: 20px;
     margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: fixed; /* التعديل الأساسي */
 }
 
 .header img {
@@ -63,6 +74,7 @@ h3 {
     font-size: 16px;
 }
 
+/* تنسيق الأقسام */
 .section {
     margin-top: 30px;
 }
@@ -81,6 +93,7 @@ h3 {
     color: #4A90E2;
 }
 
+/* تنسيق المهارات */
 .skills ul {
     display: flex;
     flex-wrap: wrap;
@@ -95,6 +108,7 @@ h3 {
     font-size: 14px;
 }
 
+/* تنسيق الفوتر */
 footer {
     background-color: #4A90E2;
     color: white;
@@ -103,14 +117,18 @@ footer {
     border-radius: 8px;
     margin-top: 30px;
 }
+
 h2 {
     text-align: center;
     color: #4A90E2;
 }
+
+/* تنسيق نموذج الاتصال */
 label {
     font-size: 16px;
     color: #333;
 }
+
 input[type="text"], input[type="email"], textarea {
     width: 100%;
     padding: 10px;
@@ -119,9 +137,11 @@ input[type="text"], input[type="email"], textarea {
     border-radius: 4px;
     font-size: 16px;
 }
+
 textarea {
     resize: vertical;
 }
+
 button {
     background-color: #4A90E2;
     color: white;
@@ -132,18 +152,22 @@ button {
     cursor: pointer;
     width: 100%;
 }
+
 button:hover {
     background-color: #357ABD;
 }
 
+/* تنسيق البطاقات */
 .card {
     background: linear-gradient(135deg, #6e7cfc, #ff6a95);
-    width: 300px;
+    width: 100%;
+    max-width: 300px; /* جعل البطاقات مرنة وتتناسب مع الأحجام المختلفة */
     height: 400px;
     border-radius: 20px;
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 10px auto; /* جعل البطاقة في المنتصف */
 }
 
 .card:hover {
